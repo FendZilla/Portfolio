@@ -1,93 +1,77 @@
-/* General body setup with background image */
+/* General Body Styles */
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url('Background.png'); /* Replace 'background-image.jpg' with the correct path */
-    background-size: cover; /* Ensures the image covers the entire page */
-    background-position: center; /* Centers the background image */
-    background-attachment: fixed; /* Keeps the image static when scrolling */
-    color: #fff; /* Adjusts text color to be visible over dark background */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
-/* Navbar */
+/* Navbar Styles */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 100;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
 }
 
-/* Logo and links */
 .navbar h1 {
     margin: 0;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .navbar nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
-    display: flex;
+    margin: 10px 0 0 0;
 }
 
 .navbar nav ul li {
-    margin-right: 20px;
+    display: inline;
+    margin: 0 15px;
 }
 
 .navbar nav ul li a {
+    color: white;
     text-decoration: none;
-    color: #fff;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
-/* About Section */
-#about {
-    padding: 100px 20px; /* Add padding to the top for navbar spacing */
-    text-align: center;
-    color: #fff;
+/* Section Styling */
+section {
+    padding: 40px 20px;
 }
 
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* About Section Styles */
 #about .about-container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
     gap: 20px;
 }
 
-#about .profile-photo {
+.profile-photo {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-#about p {
-    max-width: 800px;
-    text-align: left;
-    font-size: 18px;
-}
-
-/* Projects Section */
-#projects {
-    padding: 60px 20px;
-}
-
-.project {
+/* Project Section Styles */
+#projects .project {
     margin-bottom: 40px;
 }
 
 .project h3 {
-    font-size: 24px;
-    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
-
 
 /* Video and Description Layout */
 .project-content {
@@ -121,51 +105,28 @@ body {
     }
 }
 
-.video-container {
-    margin-top: 20px;
-}
-
-/* Contact Section */
-#contact {
-    padding: 60px 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-}
-
+/* Contact Section Styles */
 #contact p {
-    font-size: 18px;
+    font-size: 1rem;
 }
 
-/* Footer */
+/* Footer Styles */
 footer {
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
-    color: #fff;
+    padding: 20px;
+    background-color: #333;
+    color: white;
 }
 
 footer a {
-    color: #fff;
+    color: #ff6347;
     text-decoration: none;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .about-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .profile-photo {
-        width: 120px;
-        height: 120px;
-    }
-
-    #about p {
-        font-size: 16px;
-    }
-
-    #projects .project {
-        margin-bottom: 20px;
-    }
+/* Background Image */
+body {
+    background-image: url('Background.png'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
