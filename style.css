@@ -56,6 +56,10 @@ section {
     gap: 20px;
 }
 
+#about .about-container.p {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
 .profile-photo {
     width: 150px;
     height: 150px;
@@ -86,6 +90,7 @@ section {
 }
 
 .project-description {
+    background-color: rgba(0, 0, 0, 0.3);
     flex: 1;
     max-width: 50%;
     padding: 10px;
