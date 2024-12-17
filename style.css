@@ -1,56 +1,64 @@
-/* Body styling: Set the static background image */
+/* General body setup with background image */
 body {
-    font-family: Arial, sans-serif;
-    background-image: url('Background.png'); /* Path to your background image */
-    background-size: cover; /* Make the image cover the entire screen */
-    background-position: center center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    background-attachment: fixed; /* Static background image */
-    color: #333;
-    line-height: 1.6;
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('Background.png'); /* Replace 'background-image.jpg' with the correct path */
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-position: center; /* Centers the background image */
+    background-attachment: fixed; /* Keeps the image static when scrolling */
+    color: #fff; /* Adjusts text color to be visible over dark background */
 }
 
-/* Navbar styling */
+/* Navbar */
 .navbar {
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
 
+/* Logo and links */
 .navbar h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 24px;
 }
 
 .navbar nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
 }
 
 .navbar nav ul li {
-    display: inline-block;
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
 .navbar nav ul li a {
-    color: white;
     text-decoration: none;
-    font-size: 1.1rem;
+    color: #fff;
+    font-size: 16px;
 }
 
-.navbar nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* About section */
+/* About Section */
 #about {
-    padding: 50px 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Light transparent background */
+    padding: 100px 20px; /* Add padding to the top for navbar spacing */
     text-align: center;
+    color: #fff;
+}
+
+#about .about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 #about .profile-photo {
@@ -58,65 +66,54 @@ body {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 20px;
-}
-
-#about h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
 }
 
 #about p {
-    font-size: 1rem;
     max-width: 800px;
-    margin: 0 auto;
+    text-align: left;
+    font-size: 18px;
 }
 
-/* Projects section */
+/* Projects Section */
 #projects {
-    padding: 50px 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* Light transparent background */
-}
-
-#projects h2 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 20px;
+    padding: 60px 20px;
 }
 
 .project {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
-.project iframe {
-    width: 100%;
-    height: 315px;
-    border: none;
-    margin-bottom: 20px;
+.project h3 {
+    font-size: 24px;
+    color: #fff;
 }
 
-/* Contact section */
+.project p {
+    font-size: 18px;
+    color: #fff;
+}
+
+.video-container {
+    margin-top: 20px;
+}
+
+/* Contact Section */
 #contact {
-    padding: 50px 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* Light transparent background */
-    text-align: center;
+    padding: 60px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
 }
 
-#contact a {
-    color: #333;
-    text-decoration: none;
+#contact p {
+    font-size: 18px;
 }
 
-#contact a:hover {
-    text-decoration: underline;
-}
-
-/* Footer styling */
+/* Footer */
 footer {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
-    padding: 10px 0;
-    background-color: #333;
-    color: white;
+    color: #fff;
 }
 
 footer a {
@@ -124,6 +121,23 @@ footer a {
     text-decoration: none;
 }
 
-footer a:hover {
-    text-decoration: underline;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    #about p {
+        font-size: 16px;
+    }
+
+    #projects .project {
+        margin-bottom: 20px;
+    }
 }
