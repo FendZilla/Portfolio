@@ -56,10 +56,6 @@ section {
     gap: 20px;
 }
 
-#about .about-container.p {
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
 .profile-photo {
     width: 150px;
     height: 150px;
@@ -91,6 +87,11 @@ section {
 
 .project-description {
     background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px; /* Space around the text */
+    border-radius: 8px; /* Optional: Rounded corners */
+    max-width: 800px; /* Optional: Limit the width of the box */
+    margin-top: 20px; /* Optional: Adds space between the image and text box */
+    width: 100%; /* Make it take up full width of the parent */
     flex: 1;
     max-width: 50%;
     padding: 10px;
