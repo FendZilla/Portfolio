@@ -1,0 +1,168 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar h1 {
+    font-size: 1.8rem;
+    display: inline-block;
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.navbar nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    color: #f4f4f4;
+}
+
+/* About Section Styling */
+#about {
+    background-color: #f4f4f4; /* Light background color */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about .content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.profile-photo {
+    width: 150px; /* Adjust size as needed */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #333; /* Optional border for style */
+}
+
+#about p {
+    font-size: 1.2rem; /* Set a readable font size */
+    line-height: 1.6; /* Increase line height for readability */
+    max-width: 800px; /* Limit width for better readability */
+    margin-top: 20px;
+    color: #333; /* Dark text color for readability */
+}
+
+/* Projects Section Styling */
+#projects {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#projects .content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.project {
+    margin-bottom: 40px;
+}
+
+.project h3 {
+    font-size: 1.6rem;
+    color: #333;
+}
+
+.project p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.video-container {
+    margin-top: 20px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navbar nav ul {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .navbar nav ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-photo {
+        margin-bottom: 20px;
+    }
+
+    #projects .content {
+        padding: 10px;
+    }
+
+    .project h3 {
+        font-size: 1.4rem;
+    }
+
+    .project p {
+        font-size: 1rem;
+    }
+}
